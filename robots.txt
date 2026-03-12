@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uncletsakbam.github.io/tsafara-website/sitemap.xml
