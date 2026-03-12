@@ -1162,6 +1162,12 @@ input, select, textarea {
 				background-image: url("../../images/bg.jpg");
 			}
 		}
+
+		#bg:after {
+			/* ... τα υπόλοιπα ... */
+			will-change: transform;
+			image-rendering: -webkit-optimize-contrast;
+		}
 		
 		
 
