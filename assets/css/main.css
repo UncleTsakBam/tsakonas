@@ -1834,3 +1834,49 @@ textarea:focus {
 }
 
 }
+
+/* Language Switcher Styling */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000; /* Για να είναι πάνω από όλα */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+}
+
+.language-switcher:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.language-switcher a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none !important; /* Αφαίρεση της γραμμής του template */
+}
+
+.language-switcher img {
+    width: 25px;
+    height: auto;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+.language-switcher span {
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Για κινητά, το κατεβάζουμε λίγο για να μην πέφτει πάνω στο περιεχόμενο */
+@media screen and (max-width: 736px) {
+    .language-switcher {
+        top: 10px;
+        right: 10px;
+    }
+}
